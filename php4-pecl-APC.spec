@@ -1,24 +1,24 @@
 %define		_modname	APC
 %define		_status		stable
 %define		_sysconfdir	/etc/php4
+%define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
 
 Summary:	%{_modname} - Alternative PHP Cache
 Summary(pl):	%{_modname} - alternatywne cache PHP
 Name:		php4-pecl-%{_modname}
 Version:	3.0.8
-Release:	2
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	a70a14a00275e551e8085f742322433f
 URL:		http://pecl.php.net/package/APC/
-BuildRequires:	libtool
 BuildRequires:	php4-devel >= 3:4.3.0
+BuildRequires:	rpmbuild(macros) >= 1.230
 %requires_eq_to php4-common php4-devel
+Requires:	%{_sysconfdir}/conf.d
 Obsoletes:	php-pear-%{_modname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
 
 %description
 APC is the Alternative PHP Cache. It was conceived of to provide a
