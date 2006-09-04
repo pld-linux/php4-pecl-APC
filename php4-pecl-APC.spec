@@ -1,5 +1,3 @@
-# TODO
-# - segfaults CLI
 %define		_modname	APC
 %define		_status		stable
 %define		_sysconfdir	/etc/php4
@@ -40,6 +38,7 @@ To rozszerzenie ma w PECL status: %{_status}.
 
 %build
 cd %{_modname}-%{version}
+export CPPFLAGS="-DAPC_PHP4_STAT"
 phpize
 %configure
 %{__make}
