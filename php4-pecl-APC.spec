@@ -3,7 +3,7 @@
 %define		_sysconfdir	/etc/php4
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
 Summary:	%{_modname} - Alternative PHP Cache
-Summary(pl):	%{_modname} - alternatywne cache PHP
+Summary(pl.UTF-8):   %{_modname} - alternatywne cache PHP
 Name:		php4-pecl-%{_modname}
 Version:	3.0.11
 Release:	1
@@ -26,10 +26,10 @@ intermediate code.
 
 In PECL status of this package is: %{_status}.
 
-%description -l pl
-APC to alternatywne cache PHP. W wyobra¿eniach mia³o dostarczaæ
-wolnodostêpny, otwarty i potê¿ny szkielet do buforowania i
-optymalizowania kodu po¶redniego PHP.
+%description -l pl.UTF-8
+APC to alternatywne cache PHP. W wyobraÅ¼eniach miaÅ‚o dostarczaÄ‡
+wolnodostÄ™pny, otwarty i potÄ™Å¼ny szkielet do buforowania i
+optymalizowania kodu poÅ›redniego PHP.
 
 To rozszerzenie ma w PECL status: %{_status}.
 
