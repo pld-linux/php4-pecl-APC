@@ -3,7 +3,7 @@
 %define		_sysconfdir	/etc/php4
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
 Summary:	%{_modname} - Alternative PHP Cache
-Summary(pl.UTF-8):   %{_modname} - alternatywne cache PHP
+Summary(pl.UTF-8):	%{_modname} - alternatywne cache PHP
 Name:		php4-pecl-%{_modname}
 Version:	3.0.11
 Release:	1
