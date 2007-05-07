@@ -5,12 +5,12 @@
 Summary:	%{_modname} - Alternative PHP Cache
 Summary(pl.UTF-8):	%{_modname} - alternatywne cache PHP
 Name:		php4-pecl-%{_modname}
-Version:	3.0.11
+Version:	3.0.14
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
-# Source0-md5:	4d4481ba7be4245320083b9b254d6d79
+# Source0-md5:	0f452f936239b6107d3e2e5cda4f4bda
 URL:		http://pecl.php.net/package/APC/
 BuildRequires:	php4-devel >= 3:4.3.0
 BuildRequires:	rpmbuild(macros) >= 1.322
